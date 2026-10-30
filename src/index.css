@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import "tailwindcss";
+@theme {
+  --color-primary: #854d3d;
+  --color-secondary: #4a1e1b;
+  --color-brandDark: #270c03;
+  --font-sans: "Poppins", sans-serif;
+  --font-cursive: "Pacifico", cursive;
+  --animate-spin-slow: spin 8 linear infinite;
+}
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+  @media (min-width: 640px) {
+    padding-inline: 2rem;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 40s linear infinite;
+}
